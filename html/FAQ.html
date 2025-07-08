@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanfit - Preguntas Frecuentes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+            transition: max-height 0.5s ease-in;
+        }
+        
+        .accordion-item.active .accordion-header i {
+            transform: rotate(180deg);
+        }
+        
+        .accordion-header i {
+            transition: transform 0.3s ease;
+        }
+        
+        .search-box {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .search-box:focus {
+            box-shadow: 0 4px 6px rgba(220, 38, 38, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Cabecerro -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="bg-red-600 text-white p-2 rounded-full mr-3">
+                        <i class="fas fa-dumbbell text-xl"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold text-red-600">Han<span class="text-gray-800">Fit</span></h1>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#" class="text-gray-700 hover:text-red-600 font-medium transition">Inicio</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-red-600 font-medium transition">Tarifas</a></li>
+                        <li><a href="#" class="text-red-600 font-medium border-b-2 border-red-600 pb-1">FAQ</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="bg-gradient-to-r from-red-600 to-red-700 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Preguntas Frecuentes</h2>
+            <p class="text-xl max-w-2xl mx-auto">Encuentra respuestas a todas tus dudas sobre nuestros servicios, membresías y más.</p>
+        </div>
+    </section>
+
+    <!-- Buscadoor -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="relative">
+                    <input type="text" placeholder="Buscar en preguntas frecuentes..." 
+                           class="w-full py-4 px-6 rounded-full border border-gray-300 focus:outline-none focus:border-red-500 search-box">
+                    <button class="absolute right-3 top-1/2 transform -translate-y-1/2 bg-red-600 text-white p-2 rounded-full hover:bg-red-700 transition">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ  -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Preguntas más comunes</h3>
+                
+                <div class="space-y-4">
+                    <!-- FAQ  1 -->
+                    <div class="accordion-item bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                        <div class="accordion-header cursor-pointer p-6 flex justify-between items-center">
+                            <h4 class="text-lg font-semibold text-gray-800">¿Cómo puedo registrarme en Hanfit?</h4>
+                            <i class="fas fa-chevron-down text-red-600"></i>
+                        </div>
+                        <div class="accordion-content px-6">
+                            <div class="pb-6 text-gray-600">
+                                <p>Puedes registrarte directamente en nuestro sitio web haciendo clic en el botón "Regístrate" en la esquina superior derecha. También puedes visitar cualquiera de nuestros gimnasios y nuestro personal te ayudará con el proceso de registro.</p>
+                                <p class="mt-2">Necesitarás proporcionar información básica como tu nombre, correo electrónico y método de pago preferido.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                        <div class="accordion-header cursor-pointer p-6 flex justify-between items-center">
+                            <h4 class="text-lg font-semibold text-gray-800">¿Qué incluyen las membresías de Hanfit?</h4>
+                            <i class="fas fa-chevron-down text-red-600"></i>
+                        </div>
+                        <div class="accordion-content px-6">
+                            <div class="pb-6 text-gray-600">
+                                <p>Nuestras membresías incluyen acceso ilimitado a todas las instalaciones del gimnasio, clases grupales, vestuarios y wifi gratuito. Dependiendo del plan que elijas, también puedes obtener:</p>
+                                <ul class="list-disc pl-5 mt-2 space-y-1">
+                                    <li>Entrenamiento personalizado</li>
+                                    <li>Acceso a áreas premium</li>
+                                    <li>Asesoramiento nutricional</li>
+                                    <li>Descuentos en productos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FA 3 -->
+                    <div class="accordion-item bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                        <div class="accordion-header cursor-pointer p-6 flex justify-between items-center">
+                            <h4 class="text-lg font-semibold text-gray-800">¿Puedo congelar mi membresía?</h4>
+                            <i class="fas fa-chevron-down text-red-600"></i>
+                        </div>
+                        <div class="accordion-content px-6">
+                            <div class="pb-6 text-gray-600">
+                                <p>Sí, ofrecemos la opción de congelar tu membresía por un período mínimo de 2 semanas y máximo de 3 meses. Para solicitar la congelación, debes presentar una solicitud por escrito en recepción o a través de tu área de cliente en nuestro sitio web.</p>
+                                <p class="mt-2">Ten en cuenta que aplican ciertas condiciones y puede haber un pequeño cargo administrativo dependiendo de tu plan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 4 -->
+                    <div class="accordion-item bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                        <div class="accordion-header cursor-pointer p-6 flex justify-between items-center">
+                            <h4 class="text-lg font-semibold text-gray-800">¿Qué medidas de seguridad tienen implementadas?</h4>
+                            <i class="fas fa-chevron-down text-red-600"></i>
+                        </div>
+                        <div class="accordion-content px-6">
+                            <div class="pb-6 text-gray-600">
+                                <p>En Hanfit la seguridad de nuestros miembros es prioridad. Hemos implementado:</p>
+                                <ul class="list-disc pl-5 mt-2 space-y-1">
+                                    <li>Sistema de vigilancia 24/7</li>
+                                    <li>Personal de seguridad en todas las instalaciones</li>
+                                    <li>Protocolos de limpieza y desinfección exhaustivos</li>
+                                    <li>Botiquines de primeros auxilios</li>
+                                </ul>
+                                <p class="mt-2">Además, todas nuestras máquinas son inspeccionadas regularmente para garantizar su correcto funcionamiento.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 5 -->
+                    <div class="accordion-item bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                        <div class="accordion-header cursor-pointer p-6 flex justify-between items-center">
+                            <h4 class="text-lg font-semibold text-gray-800">¿Ofrecen clases para principiantes?</h4>
+                            <i class="fas fa-chevron-down text-red-600"></i>
+                        </div>
+                        <div class="accordion-content px-6">
+                            <div class="pb-6 text-gray-600">
+                                <p>¡Absolutamente! Tenemos una variedad de clases diseñadas específicamente para principiantes, incluyendo:</p>
+                                <div class="grid md:grid-cols-2 gap-4 mt-3">
+                                    <div class="bg-red-50 p-3 rounded-lg">
+                                        <h5 class="font-medium text-red-700">Yoga Introductorio</h5>
+                                        <p class="text-sm mt-1">Aprende los fundamentos del yoga en un ambiente relajado.</p>
+                                    </div>
+                                    <div class="bg-red-50 p-3 rounded-lg">
+                                        <h5 class="font-medium text-red-700">Entrenamiento Funcional Básico</h5>
+                                        <p class="text-sm mt-1">Movimientos esenciales para comenzar tu rutina de ejercicios.</p>
+                                    </div>
+                                    <div class="bg-red-50 p-3 rounded-lg">
+                                        <h5 class="font-medium text-red-700">Ciclismo Indoor Nivel 1</h5>
+                                        <p class="text-sm mt-1">Clase de baja intensidad para familiarizarte con la bicicleta.</p>
+                                    </div>
+                                    <div class="bg-red-50 p-3 rounded-lg">
+                                        <h5 class="font-medium text-red-700">Pilates para Principiantes</h5>
+                                        <p class="text-sm mt-1">Enfócate en la técnica y alineación corporal correcta.</p>
+                                    </div>
+                                </div>
+                                <p class="mt-4">Además, ofrecemos una sesión de orientación gratuita para todos los nuevos miembros.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 6 -->
+                    <div class="accordion-item bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                        <div class="accordion-header cursor-pointer p-6 flex justify-between items-center">
+                            <h4 class="text-lg font-semibold text-gray-800">¿Cuál es la política de cancelación?</h4>
+                            <i class="fas fa-chevron-down text-red-600"></i>
+                        </div>
+                        <div class="accordion-content px-6">
+                            <div class="pb-6 text-gray-600">
+                                <p>Puedes cancelar tu membresía en cualquier momento enviando una solicitud por escrito con al menos 15 días de anticipación a tu fecha de renovación. Las cancelaciones solicitadas después de este período se procesarán en el siguiente ciclo de facturación.</p>
+                                <div class="bg-red-50 p-4 rounded-lg mt-3">
+                                    <h5 class="font-medium text-red-700">Importante:</h5>
+                                    <p class="mt-1 text-sm">Las membresías con compromiso de permanencia están sujetas a cargos por cancelación anticipada. Consulta los términos específicos de tu contrato.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">¿No encontraste lo que buscabas?</h3>
+                    <p class="text-gray-600 mb-6">Estamos aquí para ayudarte. Contáctanos y resolveremos todas tus dudas.</p>
+                    <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition transform hover:scale-105">
+                        Contactar con soporte
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de pag -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4 flex items-center">
+                        <div class="bg-red-600 text-white p-2 rounded-full mr-3">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        Hanfit
+                    </h4>
+                    <p class="text-gray-400">Desde 2015 cambiando vidas.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Enlaces rápidos</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Inicio</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Clases</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Entrenadores</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Membresías</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Horario</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Lunes - Viernes: 8:00 - 23:00</li>
+                        <li>Sábado: 8:00 - 14:00</li>
+                    </ul>
+                    <div class="mt-4">
+                        <h5 class="text-lg font-semibold mb-2">Contacto</h5>
+                        <p class="text-gray-400">Molleitor@gmail.com</p>
+                        <p class="text-gray-400">+34 912 345 678</p>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Newsletter</h5>
+                    <p class="text-gray-400 mb-4">Suscríbete para recibir ofertas y novedades.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Tu email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800">
+                        <button class="bg-red-600 hover:bg-red-700 px-4 rounded-r-lg transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Hanfit. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.accordion-header');
+                
+                header.addEventListener('click', () => {
+                    // Cerrar otros items abiertos
+                    accordionItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Alternar el item actual
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // Efecto hover para los botones
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', () => {
+                    button.classList.add('hover:scale-105');
+                });
+                button.addEventListener('mouseleave', () => {
+                    button.classList.remove('hover:scale-105');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
