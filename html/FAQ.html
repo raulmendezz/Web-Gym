@@ -6,34 +6,7 @@
     <title>Hanfit - Preguntas Frecuentes</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-        
-        .accordion-item.active .accordion-content {
-            max-height: 500px;
-            transition: max-height 0.5s ease-in;
-        }
-        
-        .accordion-item.active .accordion-header i {
-            transform: rotate(180deg);
-        }
-        
-        .accordion-header i {
-            transition: transform 0.3s ease;
-        }
-        
-        .search-box {
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .search-box:focus {
-            box-shadow: 0 4px 6px rgba(220, 38, 38, 0.3);
-        }
-    </style>
+    <link rel="stylesheet" href="../css/faq.css">
 </head>
 <body class="bg-gray-50">
     <!-- Cabecerro -->
@@ -46,6 +19,7 @@
                     </div>
                     <h1 class="text-2xl font-bold text-red-600">Han<span class="text-gray-800">Fit</span></h1>
                 </div>
+                <!-- Menú principal 
                 <nav class="hidden md:block">
                     <ul class="flex space-x-8">
                         <li><a href="#" class="text-gray-700 hover:text-red-600 font-medium transition">Inicio</a></li>
@@ -53,6 +27,7 @@
                         <li><a href="#" class="text-red-600 font-medium border-b-2 border-red-600 pb-1">FAQ</a></li>
                     </ul>
                 </nav>
+                -->
                 <button class="md:hidden text-gray-700">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
@@ -207,13 +182,7 @@
                     </div>
                 </div>
                 
-                <div class="mt-12 text-center">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">¿No encontraste lo que buscabas?</h3>
-                    <p class="text-gray-600 mb-6">Estamos aquí para ayudarte. Contáctanos y resolveremos todas tus dudas.</p>
-                    <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition transform hover:scale-105">
-                        Contactar con soporte
-                    </button>
-                </div>
+                
             </div>
         </div>
     </section>
