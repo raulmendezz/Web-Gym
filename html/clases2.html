@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanfit - Preguntas Frecuentes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/clases.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Cabecerro -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+            <a href="../index.html">
+                    <div class="flex items-center">
+                    <div class="bg-red-600 text-white p-2 rounded-full mr-3">
+                        <i class="fas fa-dumbbell text-xl"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold text-red-600">Han<span class="text-gray-800">Fit</span></h1>
+                </div>
+            </a>
+
+            <!-- Menú principal 
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                <li><a href="../index.html" class="text-gray-700 hover:text-red-600 font-medium transition">Inicio</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-red-600 font-medium transition">Tarifas</a></li>
+                <li><a href="FAQ.html" class="text-red-600 font-medium border-b-2 border-red-600 pb-1">FAQ</a></li>
+                </ul>
+            </nav>
+            -->
+
+            <!-- Botón hamburguesa -->
+            <button id="mobile-menu-toggle" class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+            </div>
+
+            <!-- Menu movil esta oculto por df
+            <nav id="mobile-menu" class="hidden md:hidden mt-4">
+            <ul class="flex flex-col space-y-4">
+                <li><a href="../index.html" class="text-gray-700 hover:text-red-600 font-medium transition">Inicio</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-red-600 font-medium transition">Tarifas</a></li>
+                <li><a href="FAQ.html" class="text-red-600 font-medium border-b-2 border-red-600 pb-1">FAQ</a></li>
+            </ul>
+            </nav>-->
+        </div>
+    </header>
+
+
+    <section class="bg-gradient-to-r from-red-600 to-red-700 text-white py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-6">Nuestras Clases</h2>
+                <p class="text-xl max-w-2xl mx-auto">Conoce un poco ams como trabajamos e informate sobre todas nuestraas clases para elegir la que mejor se adapte a tus metas</p>
+            </div>
+    </section>
+    <!-- Contenido principal -->
+    <main>
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+
+                <!-- Ciclo Indoor -->
+                <div class="accordion-item bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="accordion-header cursor-pointer flex items-center justify-between p-6 bg-gradient-to-r from-red-600 to-red-400">
+                        <h4 class="text-2xl md:text-3xl font-extrabold text-white tracking-wide drop-shadow-lg m-0 flex items-center">
+                            <i class="fas fa-bicycle mr-3 text-white/80"></i>
+                            Ciclo Indoor
+                        </h4>
+                        <i class="fas fa-chevron-down text-white text-2xl transition-transform duration-300"></i>
+                    </div>
+                    <div class="accordion-content px-6">
+                        <div class="pb-text-gray-600">
+                            <p>El ciclo indoor es una actividad cardiovascular de bajo impacto que se realiza en bicicletas estáticas especialmente diseñadas para simular el ciclismo al aire libre.</p>
+                            <button 
+                                class="bg-red-600 text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition abrirPopup"
+                                data-popup-title="Beneficios del Ciclo Indoor"
+                                data-popup-content="
+                                    <ul class='list-disc pl-5 space-y-1'>
+                                        <li>Mejora la salud cardiovascular.</li>
+                                        <li>Quema calorías y ayuda a perder peso.</li>
+                                        <li>Fortalece las piernas y el core.</li>
+                                        <li>Bajo impacto en las articulaciones.</li>
+                                        <li>Mejora la resistencia y la fuerza muscular.</li>
+                                        <li>Aumenta la capacidad pulmonar.</li>
+                                        <li>Reduce el estrés.</li>
+                                        <li>Entrenamiento en grupo motivador.</li>
+                                    </ul>
+                                "
+                            >
+                                ¿Quieres saber más?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entrenamiento Funcional -->
+                <div class="accordion-item bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition mt-4">
+                    <div class="accordion-header cursor-pointer flex items-center justify-between p-6 bg-gradient-to-r from-orange-500 to-yellow-400">
+                        <h4 class="text-2xl md:text-3xl font-extrabold text-white tracking-wide drop-shadow-lg m-0 flex items-center">
+                            <i class="fas fa-dumbbell mr-3 text-white/80"></i>
+                            Entrenamiento Funcional
+                        </h4>
+                        <i class="fas fa-chevron-down text-white text-2xl transition-transform duration-300"></i>
+                    </div>
+                    <div class="accordion-content px-6">
+                        <div class="pb-text-gray-600">
+                            <p>El entrenamiento funcional mejora la capacidad del cuerpo para realizar actividades diarias mediante ejercicios que involucran varios músculos y movimientos naturales.</p>
+                            <button 
+                                class="bg-orange-500 text-white px-4 py-2 rounded-lg shadow hover:bg-orange-600 transition abrirPopup"
+                                data-popup-title="Beneficios del Entrenamiento Funcional"
+                                data-popup-content="
+                                    <ul class='list-disc pl-5 space-y-1'>
+                                        <li>Aumenta la fuerza funcional para la vida diaria.</li>
+                                        <li>Mejora la estabilidad y el equilibrio.</li>
+                                        <li>Previene lesiones al trabajar la musculatura estabilizadora.</li>
+                                        <li>Es apto para todos los niveles y edades.</li>
+                                        <li>Favorece la movilidad y la coordinación.</li>
+                                    </ul>
+                                "
+                            >
+                                ¿Quieres saber más?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pilates -->
+                <div class="accordion-item bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition mt-4">
+                    <div class="accordion-header cursor-pointer flex items-center justify-between p-6 bg-gradient-to-r from-green-500 to-teal-400">
+                        <h4 class="text-2xl md:text-3xl font-extrabold text-white tracking-wide drop-shadow-lg m-0 flex items-center">
+                            <i class="fas fa-child-reaching mr-3 text-white/80"></i>
+                            Pilates
+                        </h4>
+                        <i class="fas fa-chevron-down text-white text-2xl transition-transform duration-300"></i>
+                    </div>
+                    <div class="accordion-content px-6">
+                        <div class="pb-text-gray-600">
+                            <p>El pilates es un método de entrenamiento físico y mental que se centra en fortalecer el core, mejorar la postura y aumentar la flexibilidad.</p>
+                            <button 
+                                class="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600 transition abrirPopup"
+                                data-popup-title="Beneficios del Pilates"
+                                data-popup-content="
+                                    <ul class='list-disc pl-5 space-y-1'>
+                                        <li>Fortalece la zona abdominal, lumbar, pelvis y glúteos.</li>
+                                        <li>Mejora la estabilidad postural y previene dolores de espalda.</li>
+                                        <li>Reeduca al cuerpo a mantener una postura más alineada y natural.</li>
+                                        <li>Apto para todos los niveles y edades.</li>
+                                        <li>Libera tensiones musculares y reduce molestias cervicales, lumbares o de caderas.</li>
+                                    </ul>
+                                "
+                            >
+                                ¿Quieres saber más?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Espalda Sana -->
+                <div class="accordion-item bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition mt-4">
+                    <div class="accordion-header cursor-pointer flex items-center justify-between p-6 bg-gradient-to-r from-blue-600 to-cyan-400">
+                        <h4 class="text-2xl md:text-3xl font-extrabold text-white tracking-wide drop-shadow-lg m-0 flex items-center">
+                            <i class="fas fa-spine mr-3 text-white/80"></i>
+                            Espalda Sana
+                        </h4>
+                        <i class="fas fa-chevron-down text-white text-2xl transition-transform duration-300"></i>
+                    </div>
+                    <div class="accordion-content px-6">
+                        <div class="pb-text-gray-600">
+                            <p>Espalda Sana es una clase orientada a mejorar la postura, aliviar y prevenir dolores de espalda y aumentar la flexibilidad.</p>
+                            <button 
+                                class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition abrirPopup"
+                                data-popup-title="Beneficios de Espalda Sana"
+                                data-popup-content="
+                                    <ul class='list-disc pl-5 space-y-1'>
+                                        <li>Reeduca la postura corporal a través de ejercicios conscientes.</li>
+                                        <li>Corrige desequilibrios musculares que causan malas posiciones.</li>
+                                        <li>Reduce o elimina molestias lumbares, dorsales y cervicales.</li>
+                                        <li>Mejora la movilidad de la columna vertebral sin forzarla.</li>
+                                        <li>Mejora la elasticidad de músculos rígidos y articulaciones bloqueadas.</li>
+                                        <li>Favorece una respiración más amplia y relajada.</li>
+                                    </ul>
+                                "
+                            >
+                                ¿Quieres saber más?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hipopresivos -->
+                <div class="accordion-item bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition mt-4">
+                    <div class="accordion-header cursor-pointer flex items-center justify-between p-6 bg-gradient-to-r from-purple-600 to-pink-400">
+                        <h4 class="text-2xl md:text-3xl font-extrabold text-white tracking-wide drop-shadow-lg m-0 flex items-center">
+                            <i class="fas fa-heart-pulse mr-3 text-white/80"></i>
+                            Hipopresivos
+                        </h4>
+                        <i class="fas fa-chevron-down text-white text-2xl transition-transform duration-300"></i>
+                    </div>
+                    <div class="accordion-content px-6">
+                        <div class="pb-text-gray-600">
+                            <p>Los hipopresivos fortalecen el abdomen profundo, mejoran la postura y disminuyen la presión intraabdominal.</p>
+                            <button 
+                                class="bg-purple-600 text-white px-4 py-2 rounded-lg shadow hover:bg-pink-600 transition abrirPopup"
+                                data-popup-title="Beneficios de los Hipopresivos"
+                                data-popup-content="
+                                    <ul class='list-disc pl-5 space-y-1'>
+                                        <li>Activan la musculatura profunda, logrando una barriga más plana y tonificada.</li>
+                                        <li>Mejoran la alineación corporal y reducen tensiones en cuello, espalda y hombros.</li>
+                                        <li>Muy útiles para evitar o mejorar hernias y reducir la presión interna.</li>
+                                        <li>Fortalecen el suelo pélvico, indicados para prevenir o tratar incontinencia urinaria y prolapsos.</li>
+                                    </ul>
+                                "
+                            >
+                                ¿Quieres saber más?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lower Body Blast -->
+                <div class="accordion-item bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition mt-4">
+                    <div class="accordion-header cursor-pointer flex items-center justify-between p-6 bg-gradient-to-r from-yellow-600 to-orange-400">
+                        <h4 class="text-2xl md:text-3xl font-extrabold text-white tracking-wide drop-shadow-lg m-0 flex items-center">
+                            <i class="fas fa-running mr-3 text-white/80"></i>
+                            Lower Body Blast
+                        </h4>
+                        <i class="fas fa-chevron-down text-white text-2xl transition-transform duration-300"></i>
+                    </div>
+                    <div class="accordion-content px-6">
+                        <div class="pb-text-gray-600">
+                            <p>Lower Body Blast combina HIIT y fuerza para quemar grasa, ganar músculo y mejorar la salud cardiovascular.</p>
+                            <button 
+                                class="bg-yellow-600 text-white px-4 py-2 rounded-lg shadow hover:bg-orange-600 transition abrirPopup"
+                                data-popup-title="Beneficios de Lower Body Blast"
+                                data-popup-content="
+                                    <ul class='list-disc pl-5 space-y-1'>
+                                        <li>El HIIT acelera la quema calórica durante y después del ejercicio.</li>
+                                        <li>La fuerza desarrolla masa muscular y aumenta el metabolismo basal.</li>
+                                        <li>Mejora la resistencia cardíaca, la presión arterial y el VO₂ máx.</li>
+                                        <li>Entrenamientos eficientes y cortos, perfectos para personas con poco tiempo.</li>
+                                        <li>Reducción de grasa visceral y subcutánea, aumento del tono muscular.</li>
+                                    </ul>
+                                "
+                            >
+                                ¿Quieres saber más?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stretching -->
+                <div class="accordion-item bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition mt-4">
+                    <div class="accordion-header cursor-pointer flex items-center justify-between p-6 bg-gradient-to-r from-teal-600 to-green-400">
+                        <h4 class="text-2xl md:text-3xl font-extrabold text-white tracking-wide drop-shadow-lg m-0 flex items-center">
+                            <i class="fas fa-person-walking mr-3 text-white/80"></i>
+                            Stretching
+                        </h4>
+                        <i class="fas fa-chevron-down text-white text-2xl transition-transform duration-300"></i>
+                    </div>
+                    <div class="accordion-content px-6">
+                        <div class="pb-text-gray-600">
+                            <p>Stretching mejora la flexibilidad, previene lesiones y disminuye tensiones y dolores musculares.</p>
+                            <button 
+                                class="bg-teal-600 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600 transition abrirPopup"
+                                data-popup-title="Beneficios del Stretching"
+                                data-popup-content="
+                                    <ul class='list-disc pl-5 space-y-1'>
+                                        <li>Aumenta el rango de movimiento de músculos y articulaciones.</li>
+                                        <li>Facilita movimientos más amplios y fluidos en la vida diaria o el deporte.</li>
+                                        <li>Ayuda a preparar los músculos antes del ejercicio y a recuperarlos después.</li>
+                                        <li>Reduce el riesgo de desgarros, contracturas o tensiones musculares.</li>
+                                        <li>Alivia molestias en cuello, espalda, hombros y piernas causadas por malas posturas o estrés.</li>
+                                    </ul>
+                                "
+                            >
+                                ¿Quieres saber más?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upper Body Blast -->
+                <div class="accordion-item bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition mt-4">
+                    <div class="accordion-header cursor-pointer flex items-center justify-between p-6 bg-gradient-to-r from-pink-600 to-red-400">
+                        <h4 class="text-2xl md:text-3xl font-extrabold text-white tracking-wide drop-shadow-lg m-0 flex items-center">
+                            <i class="fas fa-user-ninja mr-3 text-white/80"></i>
+                            Upper Body Blast
+                        </h4>
+                        <i class="fas fa-chevron-down text-white text-2xl transition-transform duration-300"></i>
+                    </div>
+                    <div class="accordion-content px-6">
+                        <div class="pb-text-gray-600">
+                            <p>Upper Body Blast combina HIIT y fuerza para trabajar la parte superior del cuerpo, quemar grasa y mejorar la fuerza mental.</p>
+                            <button 
+                                class="bg-pink-600 text-white px-4 py-2 rounded-lg shadow hover:bg-red-600 transition abrirPopup"
+                                data-popup-title="Beneficios de Upper Body Blast"
+                                data-popup-content="
+                                    <ul class='list-disc pl-5 space-y-1'>
+                                        <li>El HIIT acelera la quema calórica durante y después del ejercicio.</li>
+                                        <li>La fuerza desarrolla masa muscular y aumenta el metabolismo basal.</li>
+                                        <li>Mejora la resistencia cardíaca, la presión arterial y el VO₂ máx.</li>
+                                        <li>El HIT desafía el sistema nervioso central y mejora la resiliencia física y mental.</li>
+                                        <li>Reducción de grasa visceral y subcutánea, aumento del tono muscular.</li>
+                                    </ul>
+                                "
+                            >
+                                ¿Quieres saber más?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+
+    <!-- Pie de pag -->
+    <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="text-2xl font-bold mb-4 flex items-center">
+                    <span class="bg-red-600 text-white p-2 rounded-full mr-3">
+                        <i class="fas fa-dumbbell"></i>
+                    </span>
+                    Hanfit
+                </h4>
+                <p class="text-gray-400 text-sm">Desde 2015 cambiando vidas.</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="https://www.facebook.com/hanfitwellnessvillajoyosa" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/molleitor/" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="text-lg font-semibold mb-4">Enlaces rápidos</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="../index.html" class="text-gray-400 hover:text-white transition">Inicio</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Clases</a></li>
+                    <li><a href="Tarifas.html" class="text-gray-400 hover:text-white transition">Membresías</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="text-lg font-semibold mb-4">Horario</h5>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li>Lunes - Viernes: 8:00 - 23:00</li>
+                    <li>Sábado: 8:00 - 14:00</li>
+                </ul>
+
+                
+            </div>
+            <div class="">
+                <h5 class="text-lg font-semibold mb-2">Contacto</h5>
+                <p class="text-sm text-gray-400">Molleitor@gmail.com</p>
+                <p class="text-sm text-gray-400">+34 912 345 678</p>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-gray-400">
+            <p>&copy; 2025 Hanfit. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Popup Global Mejorado -->
+<div id="popup-global-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-[9999] hidden transition-all duration-300">
+    <div id="popup-global-content" class="bg-white rounded-2xl shadow-2xl max-w-lg w-[90vw] p-8 relative scale-90 opacity-0 transition-all duration-300">
+        <button id="popup-global-close" class="absolute top-4 right-4 text-gray-400 hover:text-red-600 text-2xl font-bold transition-colors duration-200" aria-label="Cerrar popup">
+            &times;
+        </button>
+        <div id="popup-global-inner"></div>
+    </div>
+</div>
+
+<script src="../js/clases.js"></script>
+</body>
+</html>

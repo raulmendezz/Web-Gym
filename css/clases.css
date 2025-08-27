@@ -10,7 +10,7 @@
         }
         
         .accordion-item.active .accordion-header i {
-            transform: rotate(180deg);
+            transform: rotate(360deg);
         }
         
         .accordion-header i {
@@ -65,4 +65,38 @@
         .table-responsive {
             overflow-x: auto;
             padding: 1px;
+        }
+        
+        .cicloOverlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .popup {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 1rem;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+        }
+        
+        /* Popup Mejorado */
+        #popup-global-overlay {
+            display: none;
+            /* El resto de estilos ya están en el HTML con Tailwind */
+        }
+        #popup-global-overlay.active {
+            display: flex;
+        }
+        #popup-global-content.active {
+            opacity: 1;
+            scale: 1;
+        }
+        body.popup-abierto {
+            overflow: hidden;
         }

@@ -113,7 +113,7 @@
                 
                 <!-- f2 -->
                 <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 transition-transform duration-300">
-                    <a href="html/clases.html">
+                    <a href="html/clases2.html">
                         <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
                             <i class="fas fa-mobile-alt text-red-600 text-2xl"></i>
                         </div>
@@ -217,22 +217,6 @@
             });
         });
     </script>
-    <script>
-        function mostrarLlamada() {
-        Swal.fire({
-            title: 'Bienvenido a la web del Hanfit',
-            text: 'Este es el número para contactar con nosotros: 912345678',
-            icon: 'info',
-            confirmButtonText: 'Llamar',
-            customClass: {
-            confirmButton: 'bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded'
-            }
-        }).then((resultado) => {
-            if (resultado.isConfirmed) {
-            window.location.href = "tel:912345678";
-            }
-        });
-        }
-    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>
