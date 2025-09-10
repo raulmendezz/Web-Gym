@@ -1,49 +1,65 @@
+/* Círculos decorativos */
 .circle-decoration {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(30px);
-            opacity: 0.6;
-            z-index: -1;
-        }
-        
-        .btn-hover-effect {
-            transition: all 0.3s ease;
-            transform: translateY(0);
-        }
-        
-        .btn-hover-effect:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(220, 38, 38, 0.3);
-        }
-        
-        .nav-link {
-            position: relative;
-        }
-        
-        .nav-link:after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background-color: #dc2626;
-            transition: width 0.3s ease;
-        }
-        
-        .nav-link:hover:after {
-            width: 100%;
-        }
-        
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-15px);
-            }
-        }
-        
-        .floating {
-            animation: float 4s ease-in-out infinite;
-        }
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(30px);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* Posiciones por defecto (desktop) */
+.circle-decoration.w-64 { width: 16rem; height: 16rem; }
+.circle-decoration.w-80 { width: 20rem; height: 20rem; }
+.circle-decoration.w-96 { width: 24rem; height: 24rem; }
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+    .circle-decoration.w-64 { width: 12rem; height: 12rem; top: 10%; left: -10%; }
+    .circle-decoration.w-80 { width: 16rem; height: 16rem; top: 50%; left: 10%; }
+    .circle-decoration.w-96 { width: 20rem; height: 20rem; bottom: -10%; right: -10%; }
+}
+
+/* Botón hover */
+.btn-hover-effect {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.btn-hover-effect:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(220, 38, 38, 0.3);
+}
+
+/* Nav link underline */
+.nav-link {
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #dc2626;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+/* Animación floating */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.floating {
+    animation: float 4s ease-in-out infinite;
+}
